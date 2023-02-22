@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<!-- <a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav> -->
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<!-- <ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul> -->
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>First Movie Date with N</h1>
+							</header>
+							<div class="content">
+								<p>Here are a list of some movies I was considering for Friday! Let me know what you think 😁</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Scott Pilgrim vs The World</h3>
+										<p>Fun, goofy movie that I haven't seen in years. I used to really enjoy this one, wonder if it stands the test of time??</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>IP Man</h3>
+										<p>Based on historically events, this is a martial arts movie about the guy who trained Bruce Lee. Lots of awesome action and emotion!</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Bullet Train</h3>
+										<p>This is one I have wanted to see since the trailer first dropped but have never gotten around to it. It looks super good and a certain someone recommended it (●'◡'●)</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Adam By Eve</h3>
+										<p>No clue on this one. I was going through Netflix looking for choices and I saw this. It's part live-action but also part anime! Sounds like a wild ride, maybe something if we feel experimental</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>A Whisker Away</h3>
+										<p>Long time on my to-watch list with a ton glowing reviews. This is one that will speak to our romantic sides and probably put us in tears. Just how we do.</p>
+									</header>
+								</article>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="inner">
+									<header class="major">
+										<h2>I Hope They Looked Interesting!</h2>
+									</header>
+									<p>Now you can let me know all your thoughts on my list! It's okay if none seem to be what you're feeling, I've got a couple from your list that seem like stuff we'd have fun watching. Talk to you soon! 😚</p>
+								</div>
+							</section>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				const tiles = document.querySelectorAll('.tiles article');
+
+				tiles.forEach(tile => {
+					tile.addEventListener('mouseover', () => {
+						const header = tile.querySelector('h3');
+						const text = tile.querySelector('p');
+
+						header.style.display = 'none'
+						text.style.display = 'none'
+					})
+				})
+
+				tiles.forEach(tile => {
+					tile.addEventListener('mouseleave', () => {
+						const header = tile.querySelector('h3');
+						const text = tile.querySelector('p');
+
+						header.style.display = 'block'
+						text.style.display = 'block'
+					})
+				})
+			</script>
+
+	</body>
+</html>
